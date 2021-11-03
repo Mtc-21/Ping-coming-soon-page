@@ -109,6 +109,14 @@
     input[type="submit"]:hover {
       opacity: 0.6;
     }
+    .success {
+      color: green;
+    }
+    .alert{
+      border:solid 1px var(--light-red, hsl(354, 100%, 66%)) !important;
+      color:black !important;
+    }
+
 
     span {
       color: var(--light-red, hsl(354, 100%, 66%));
@@ -180,10 +188,7 @@
       box-shadow: 0 0 0 30px white inset !important;
     }
 
-    .success {
-      color: green;
-    }
-
+    
     @media (min-width:1000px) {
       h1 {
         font-size: calc(2.5rem + 1vw);

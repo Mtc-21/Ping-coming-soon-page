@@ -8,11 +8,13 @@ const email = document.querySelector("#email");
 
     const removeAlert = () => {
       error.textContent = "";
+      email.classList.remove("alert");
       error.style.display = "none";
     }
 
     const addAlert = () => {
       error.classList.remove("success");
+      email.classList.add("alert");
       error.style.display = "block";
       error.textContent = "Please provide a valid email address";
 
